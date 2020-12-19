@@ -5,6 +5,10 @@ namespace ijuniorEducationHomework
 {
     public class HomeWork15
     {
+        /*
+        Дан двумерный массив.
+        Вычислить сумму второй строки и произведение первого столбца. Вывести исходную матрицу и результаты вычислений.
+         */
         public static void Work()
         {
             int summa = 0;
