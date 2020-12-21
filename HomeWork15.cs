@@ -11,34 +11,35 @@ namespace ijuniorEducationHomework
          */
         public static void Work()
         {
-            int summa = 0;
-            int multiply;
+            int summaResult = 0;
+            int multiplyResult = 1;
 
-            int[,] arrayFirst =
-            {
-                {3, 7, 5, 3, 8, 3, 3, 2},
-                {6, 7, 2, 4, 6, 7, 2, 1}
-            };
+            Random randomNumberGenerator = new Random();
+            int sizeColumnGenerate = randomNumberGenerator.Next(2, 10);
+            int sizeRowGenerate = randomNumberGenerator.Next(2, 10);
 
-            multiply = arrayFirst[0, 0] * arrayFirst[1, 0];
-            Console.WriteLine("Исходный двумерный массив:");
+            int[,] arrayFirst = new int[sizeColumnGenerate, sizeRowGenerate];
 
+            Console.WriteLine("Исходный массив:");
             for (int i = 0; i < arrayFirst.GetLength(0); i++)
             {
                 for (int j = 0; j < arrayFirst.GetLength(1); j++)
                 {
+                    arrayFirst[i, j] = randomNumberGenerator.Next(1, 10);
                     Console.Write(arrayFirst[i, j] + " ");
-                    if (i == 1)
+
+                    if (i == 0)
                     {
-                        summa += arrayFirst[1, j];
+                        summaResult += arrayFirst[0, j];
                     }
                 }
 
+                multiplyResult *= arrayFirst[i, 0];
                 Console.Write("\n");
             }
 
-            Console.WriteLine($"Сумма второй строки: {summa}");
-            Console.WriteLine($"Произведение первого столбца: {multiply}");
+            Console.WriteLine($"Сумма второй строки: {summaResult}");
+            Console.WriteLine($"Произведение первого столбца: {multiplyResult}");
             Console.ReadKey();
         }
     }

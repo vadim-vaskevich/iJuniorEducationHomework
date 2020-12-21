@@ -6,7 +6,7 @@ namespace ijuniorEducationHomework
     {
         public static void Main(string[] args)
         {
-            HomeWork13.Work();
+            HomeWork15.Work();
         }
     }
 }
