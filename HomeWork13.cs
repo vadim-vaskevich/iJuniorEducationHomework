@@ -12,18 +12,19 @@ namespace ijuniorEducationHomework
         {
             string password = "qwe";
             string passwordInput;
+            int numberPasswordTry = 5;
 
-            for (int i = 0; i < 3; i++)
+            while (numberPasswordTry > 0)
             {
-                Console.WriteLine($"У вас осталось попыток ввода пароля: {3 - i}");
+                Console.WriteLine($"У вас осталось попыток ввода пароля: {numberPasswordTry}");
+                numberPasswordTry--;
 
                 Console.WriteLine("Введите пароль:");
                 passwordInput = Console.ReadLine();
 
                 if (passwordInput == password)
                 {
-                    Console.WriteLine("Тайное сообщение: Ola-la\nВведите enter для выхода...");
-                    Console.ReadKey();
+                    Console.WriteLine("Тайное сообщение: Ola-la");
                     break;
                 }
                 else

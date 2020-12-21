@@ -15,14 +15,25 @@ namespace ijuniorEducationHomework
         {
             Random randomNumber = new Random();
             int[] arrayNumber = new int[30];
-            int minValue = int.MinValue;
-            
+            int maxValue;
+
             Console.WriteLine("Исходный массив:");
-            
+
             for (int i = 0; i < arrayNumber.Length; i++)
             {
                 arrayNumber[i] = randomNumber.Next(-100, 100);
                 Console.Write(arrayNumber[i] + " ");
+            }
+
+            maxValue = arrayNumber[0];
+
+            for (int i = 0; i < arrayNumber.Length; i++)
+            {
+                if (arrayNumber[i] > maxValue)
+                {
+                    Console.WriteLine($"Локальный максимум {arrayNumber} на позиции [{i}]");
+                    maxValue = arrayNumber[i];
+                }
             }
 
             Console.WriteLine();
