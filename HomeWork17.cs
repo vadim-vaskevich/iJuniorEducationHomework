@@ -14,8 +14,8 @@ namespace ijuniorEducationHomework
         public static void Work()
         {
             Random randomNumber = new Random();
-            int[] arrayNumber = new int[30];
-            int maxValue;
+            int arraySize = 30;
+            int[] arrayNumber = new int[arraySize];
 
             Console.WriteLine("Исходный массив:");
 
@@ -25,18 +25,25 @@ namespace ijuniorEducationHomework
                 Console.Write(arrayNumber[i] + " ");
             }
 
-            maxValue = arrayNumber[0];
-
-            for (int i = 0; i < arrayNumber.Length; i++)
+            Console.WriteLine();
+            if (arrayNumber[0] > arrayNumber[1])
             {
-                if (arrayNumber[i] > maxValue)
+                Console.WriteLine($"Локальный максимум {arrayNumber[0]} на позиции [0] ");
+            }
+
+            for (int i = 1; i < arrayNumber.Length - 1; ++i)
+            {
+                if (arrayNumber[i + 1] < arrayNumber[i] && arrayNumber[i - 1] < arrayNumber[i])
                 {
-                    Console.WriteLine($"Локальный максимум {arrayNumber} на позиции [{i}]");
-                    maxValue = arrayNumber[i];
+                    Console.WriteLine($"Локальный максимум {arrayNumber[i]} на позиции [{i}]");
                 }
             }
 
-            Console.WriteLine();
+            if (arrayNumber[arrayNumber.Length - 1] > arrayNumber[arrayNumber.Length - 2])
+            {
+                Console.WriteLine($"Локальный максимум {arrayNumber[arrayNumber.Length - 1]} " +
+                                  $"на позиции [{arrayNumber.Length}]");
+            }
 
             Console.ReadLine();
         }
