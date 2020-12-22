@@ -11,12 +11,12 @@ namespace ijuniorEducationHomework
          */
         public static void Work()
         {
-            int summaResult = 0;
+            int sumResult = 0;
             int multiplyResult = 1;
 
             Random randomNumberGenerator = new Random();
-            int sizeColumnGenerate = randomNumberGenerator.Next(2, 10);
-            int sizeRowGenerate = randomNumberGenerator.Next(2, 10);
+            int sizeColumnGenerate = randomNumberGenerator.Next(2, 5);
+            int sizeRowGenerate = randomNumberGenerator.Next(2, 4);
 
             int[,] arrayFirst = new int[sizeColumnGenerate, sizeRowGenerate];
 
@@ -27,18 +27,22 @@ namespace ijuniorEducationHomework
                 {
                     arrayFirst[i, j] = randomNumberGenerator.Next(1, 10);
                     Console.Write(arrayFirst[i, j] + " ");
-
-                    if (i == 0)
-                    {
-                        summaResult += arrayFirst[0, j];
-                    }
                 }
 
-                multiplyResult *= arrayFirst[i, 0];
                 Console.Write("\n");
             }
 
-            Console.WriteLine($"Сумма второй строки: {summaResult}");
+            for (int i = 0; i < arrayFirst.GetLength(1); i++)
+            {
+                sumResult += arrayFirst[1, i];
+            }
+
+            for (int i = 0; i < arrayFirst.GetLength(0); i++)
+            {
+                multiplyResult *= arrayFirst[i, 0];
+            }
+
+            Console.WriteLine($"Сумма второй строки: {sumResult}");
             Console.WriteLine($"Произведение первого столбца: {multiplyResult}");
             Console.ReadKey();
         }
