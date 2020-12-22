@@ -1,12 +1,9 @@
 using System;
+
 namespace ijuniorEducationHomework
 {
     public class HomeWork7
     {
-        /*
-        При помощи циклов вы можете повторять один и тот же код множество раз.
-        Напишите простейшую программу, которая выводит указанное(установленное) пользователем сообщение заданное количество раз.
-        */
         public static void Work()
         {
             string words;
@@ -20,7 +17,7 @@ namespace ijuniorEducationHomework
 
             for (int i = 0; i < countRepeat; i++)
             {
-                Console.WriteLine($"{i+1}: {words}");
+                Console.WriteLine($"{i + 1}: {words}");
             }
 
             Console.ReadLine();

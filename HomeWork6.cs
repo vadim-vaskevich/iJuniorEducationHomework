@@ -1,12 +1,9 @@
 using System;
+
 namespace ijuniorEducationHomework
 {
     public class HomeWork6
     {
-        /*
-        Вы задаете вопросы пользователю, по типу "как вас зовут", "какой ваш знак зодиака" и тд, после чего, по данным, которые он ввел, формируете небольшой текст о пользователе.
-        "Вас зовут Алексей, вам 21 год, вы водолей и работаете на заводе."
-        */
         public static void Work()
         {
             string nameUser;
@@ -26,7 +23,8 @@ namespace ijuniorEducationHomework
             Console.WriteLine("Где Вы работаете?");
             placeWorkUser = Console.ReadLine();
 
-            Console.WriteLine($"Вас зовут {nameUser}, вам {ageUser} год, Вы {zodiacUser} и работаете на {placeWorkUser}.");
+            Console.WriteLine(
+                $"Вас зовут {nameUser}, вам {ageUser} год, Вы {zodiacUser} и работаете на {placeWorkUser}.");
         }
     }
 }

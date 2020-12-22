@@ -1,13 +1,9 @@
 using System;
+
 namespace ijuniorEducationHomework
 {
     public class HomeWork9
     {
-        /*
-        Написать конвертер валют (3 валюты).
-        У пользователя есть баланс в каждой из представленных валют. Он может попросить сконвертировать часть баланса с одной валюты в другую. Тогда у него с баланса одной валюты снимется X и зачислится на баланс другой Y. Курс конвертации должен быть просто прописан в программе.
-        Программа должна завершиться тогда, когда это решит пользователь.
-        */
         public static void Work()
         {
             int rubToUsd = 73, usdToRub = 71;
@@ -46,6 +42,7 @@ namespace ijuniorEducationHomework
                         {
                             Console.WriteLine("Недопустимое количество рублей.");
                         }
+
                         break;
 
                     case 2:
@@ -60,6 +57,7 @@ namespace ijuniorEducationHomework
                         {
                             Console.WriteLine("Недопустимое количество рублей.");
                         }
+
                         break;
 
                     default:

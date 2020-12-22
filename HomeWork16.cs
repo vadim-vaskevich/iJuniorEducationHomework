@@ -4,10 +4,6 @@ namespace ijuniorEducationHomework
 {
     public class HomeWork16
     {
-        /*
-        Найти наибольший элемент матрицы A(10,10) и записать ноль в ту ячейку, где он находится. Вывести наибольший элемент, исходную и полученную матрицу.
-        Массив под измененную версию не нужен.
-         */
         public static void Work()
         {
             Random randomNumber = new Random();
