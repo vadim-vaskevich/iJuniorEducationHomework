@@ -47,6 +47,7 @@
         <Compile Include="HomeWork15.cs"/>
         <Compile Include="HomeWork16.cs"/>
         <Compile Include="HomeWork17.cs"/>
+        <Compile Include="HomeWork18.cs"/>
         <Compile Include="HomeWork3.cs"/>
         <Compile Include="HomeWork4.cs"/>
         <Compile Include="HomeWork5.cs"/>
