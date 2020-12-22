@@ -13,6 +13,10 @@ namespace ijuniorEducationHomework
          */
         public static void Work()
         {
+            Console.WriteLine("Меню:");
+            Console.WriteLine("Введите число\n");
+            Console.WriteLine("Ввведите sum для подсчета введенных чисел\n");
+            Console.WriteLine("Введите exit - выход из программы\n");
         }
     }
 }
