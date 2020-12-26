@@ -58,7 +58,6 @@ namespace ijuniorEducationHomework
                     case 4:
                         Console.WriteLine("Введите фамилию для поиска:");
                         searchName(nameArray, officeArray, Console.ReadLine());
-
                         break;
 
                     case 5:
