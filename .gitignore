@@ -1,10 +1,10 @@
 bin/
 obj/
 /packages/
+/_ReSharper.Caches/
+/Properties/AssemblyInfo.cs
+/.idea/
 riderModule.iml
 Program.cs
 ijuniorEducationHomework.csproj
 ijuniorEducationHomework.sln
-/_ReSharper.Caches/
-/Properties/AssemblyInfo.cs
-/.idea/
